@@ -40,12 +40,44 @@ body{
     justify-content: center;
 }
 
+.logo img{
+    animation-name: anima ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    width: 150px;
+   ;
+}
+
+@keyframes anima{
+    10% {
+        transform: scaleY(0.8);
+    }
+    25%, 26% {
+        transform: translateY(-24px) scaleY(1.001);
+    }
+    35% {
+        transform: translateY(0) scaleY(0.999);
+    }
+    50% {
+        transform: scaleY(0.9);
+    }
+    70% {
+        tranform: scaleY(1);
+    }   
+}
+
 h1{
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
     color: black;
     text-align: center;
-    
+    transition: all 1.4s;
+}
+
+h1:hover{
+    font-size: 60px;
+    color: blue;
 }
 
 h3{
@@ -60,12 +92,36 @@ h3{
     justify-content: center;
     width: 100%;
     height: 500px;
+    animation-name: fotopri ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 9s;
+}
+
+.fotopri:hover{
+    -webkit-animation: 10s aparicion 1;
+}   
+
+@keyframes fotopri{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    transition: all 0.5s;
+    }
 }
 
 h2{
     font-family:'Permanent Marker', cursive ;
     font-size: 28px;
-    text-align: center; 
+    text-align: center;
+}
+
+h2:hover{
+    font-size: 30px;
+    color: blue;   
 }
 
 .padre{
